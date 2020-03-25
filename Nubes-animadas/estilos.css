@@ -1,0 +1,47 @@
+body{
+	background-image: url(fondo.png);
+	background-size: 100% 1000px;
+	overflow: hidden;
+}
+
+.nube{
+	//border: 1px solid black;
+	width: 150px;
+	height: 100px;
+	
+	background-size: 100% 100%;
+	position: absolute;
+	
+}
+
+
+.nube:nth-child(1){
+	background-image: url(nube1.png);
+	animation: movimiento1 20s infinite;
+}
+
+.nube:nth-child(2){
+	margin-top: 100px;
+	background-image: url(https://pngimage.net/wp-content/uploads/2018/05/avioncito-png-2.png);
+	animation: movimiento2 10s infinite;
+}
+
+@keyframes movimiento1{
+
+	from{
+		margin-left: 100%;
+	}
+	to{
+		margin-left: -30%;
+	}
+}
+
+@keyframes movimiento2{
+
+	from{
+		margin-left: 100%;
+	}
+	to{
+		margin-left: -30%;
+	}
+}
